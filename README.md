@@ -1,4 +1,4 @@
-#Shopify Insights – GENAI Intern Project
+Shopify Insights – GENAI Intern Project
 
 ## Overview
 This project provides insights and analytics for Shopify data using Python.  
