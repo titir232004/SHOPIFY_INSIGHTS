@@ -65,10 +65,13 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-```
 Run FastAPI server:
 ```
+uvicorn app.main:app --reload  
+```
 The application will start and process Shopify data, generating insights and reports based on the configurations provided.
+Open a browser or Postman at http://127.0.0.1:8000/docs to see interactive API documentation.
+Use the /insights endpoint to fetch brand, product, and competitor information.
 
 ## Configuration
 Modify app/config.py to set database, scraping, and operational settings:
