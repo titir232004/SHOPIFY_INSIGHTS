@@ -51,50 +51,56 @@ It contains modules for data extraction, processing, and reporting.
 ```
 git clone https://github.com/titir232004/shopify-insights.git
 cd shopify-insights
-Create and activate a virtual environment:
+```
 
-
+2. Create and activate a virtual environment:
+```
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
-Install dependencies:
 
-
+```
+3. Install dependencies:
+```
 pip install -r requirements.txt
-Usage
-Run the main application:
+```
 
-
-python app/main.py
+## Usage
+```
+Run FastAPI server:
+```
 The application will start and process Shopify data, generating insights and reports based on the configurations provided.
 
-Configuration
-Modify .env or app/config.py to set database URLs, API keys, and other operational settings:
+## Configuration
+Modify app/config.py to set database, scraping, and operational settings:
+```
+# Database
+DB_HOST = "localhost"
+DB_PORT = 3306
+DB_USER = "your_db_user"
+DB_PASSWORD = "your_db_password"
+DB_NAME = "shopify_insights"
 
+# Scraper Settings
+USER_AGENT = "Mozilla/5.0"
+REQUEST_TIMEOUT = 10  # seconds
 
-DATABASE_URL = "sqlite:///shopify.db"
-API_KEY = "your_api_key_here"
-OTHER_SETTING = "value"
-Features
-Data Extraction – Pulls data from Shopify stores.
+# Logging
+LOGGING_ENABLED = True
+```
+## Features
+1. **Natural Language Understanding** – Processes queries and commands.  
+2. **Automated Decision-Making** – Uses AI models to recommend or execute actions.  
+3. **Task Automation** – Schedules and executes business tasks.  
+4. **Extensible Toolset** – Add new modules for different corporate workflows.  
+5. **API Integrations** – Connects with business APIs for data access.  
 
-Analytics & Insights – Provides sales, customer, and product analysis.
+## Requirements
+- Python 3.8+  
+- Internet connection for API calls  
+- Dependencies in `requirements.txt`
 
-Report Generation – Generates automated summaries and visualizations.
-
-Modular Architecture – Easy to extend with new modules.
-
-API Integrations – Connects with external APIs for richer data.
-
-Requirements
-Python 3.8+
-
-Internet connection for API calls
-
-Dependencies listed in requirements.txt
-
-License
+## License
 This project is licensed under the MIT License. See LICENSE for details.
-
 
 
 
