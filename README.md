@@ -39,44 +39,61 @@ shopify-insights/
 ├─ .env
 ├─ requirements.txt
 ```
-## Installation & Setup
+# Shopify Insights – GENAI Intern Project
 
-### 1. Clone the Repository
-git clone https://github.com/yourusername/shopify-insights.git
+## Overview
+This project provides insights and analytics for Shopify data using Python.  
+It contains modules for data extraction, processing, and reporting.
+
+## Installation
+
+1. Clone the repository:
+```
+git clone https://github.com/titir232004/shopify-insights.git
 cd shopify-insights
+Create and activate a virtual environment:
 
-2. Create a Virtual Environment
-It’s recommended to use a virtual environment to avoid dependency conflicts.
 
-Linux/macOS:
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+Install dependencies:
 
-Windows:
-python -m venv venv
-venv\Scripts\activate
 
-3. Install Dependencies
 pip install -r requirements.txt
+Usage
+Run the main application:
 
-4. Setup Environment Variables
-Create a .env file in the root directory if not already present. Example:
 
-DATABASE_URL=sqlite:///shopify.db
-API_KEY=your_api_key_here
-OTHER_SETTING=value
-
-5. Run the Application
 python app/main.py
+The application will start and process Shopify data, generating insights and reports based on the configurations provided.
 
-Follow the console prompts or open the API endpoints if using FastAPI routers.
+Configuration
+Modify .env or app/config.py to set database URLs, API keys, and other operational settings:
 
-6. Run Tests
-pytest tests/
+
+DATABASE_URL = "sqlite:///shopify.db"
+API_KEY = "your_api_key_here"
+OTHER_SETTING = "value"
+Features
+Data Extraction – Pulls data from Shopify stores.
+
+Analytics & Insights – Provides sales, customer, and product analysis.
+
+Report Generation – Generates automated summaries and visualizations.
+
+Modular Architecture – Easy to extend with new modules.
+
+API Integrations – Connects with external APIs for richer data.
+
+Requirements
+Python 3.8+
+
+Internet connection for API calls
+
+Dependencies listed in requirements.txt
 
 License
-
-MIT License
+This project is licensed under the MIT License. See LICENSE for details.
 
 
 
