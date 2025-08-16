@@ -45,29 +45,28 @@ shopify-insights/
 git clone https://github.com/yourusername/shopify-insights.git
 cd shopify-insights
 
-2. Create a Virtual Environment
+###2. Create a Virtual Environment
 It’s recommended to use a virtual environment to avoid dependency conflicts.
 python -m venv venv      
 source venv/bin/activate # On Linux/macOS
 venv\Scripts\activate    # On Windows
 
-3. Install Dependencies
+###3. Install Dependencies
 pip install -r requirements.txt
 
-4. Setup Environment Variables
-
+###4. Setup Environment Variables
 Create a .env file in the root directory if not already present. Example:
 
 DATABASE_URL=sqlite:///shopify.db
 API_KEY=your_api_key_here
 OTHER_SETTING=value
 
-5. Run the Application
+###5. Run the Application
 python app/main.py
 
 Follow the console prompts or open the API endpoints if using FastAPI routers.
 
-6. Run Tests
+###6. Run Tests
 
 To make sure everything is working correctly:
 pytest tests/
