@@ -39,12 +39,6 @@ shopify-insights/
 ├─ .env
 ├─ requirements.txt
 ```
-# Shopify Insights – GENAI Intern Project
-
-## Overview
-This project provides insights and analytics for Shopify data using Python.  
-It contains modules for data extraction, processing, and reporting.
-
 ## Installation
 
 1. Clone the repository:
